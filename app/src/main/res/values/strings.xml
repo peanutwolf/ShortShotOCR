@@ -23,10 +23,10 @@
     <string name="icons8_link" translatable="false">This app uses https://icons8.com</string>
     <string name="share_text" translatable="true">Share Text</string>
     <string name="tap_msg" translatable="true">Tap the text…</string>
-    <string name="save_text">Save to history</string>
-    <string name="detection_history">Detection History</string>
-    <string name="no_history_available">No Detections available yet in database.\nClick save button in context menu when detections are made or select saving switch in settings menu.</string>
-    <string name="history_settings_header">Select switch if you want detections automatically to be saved to history</string>
-    <string name="save_history">Save to DB on detection</string>
-    <string name="history_depth_value">Number of saved items limit: %d</string>
+    <string name="save_text" translatable="true">Save to history</string>
+    <string name="detection_history" translatable="true">Recognition History</string>
+    <string name="no_history_available" translatable="true">No recognitions available yet in database.\nClick save button in context menu when recognitions are made or select saving switch in settings menu.</string>
+    <string name="history_settings_header" translatable="true">Select switch if you want recognitions automatically to be saved to history</string>
+    <string name="save_history" translatable="true">Save to database on recognition</string>
+    <string name="history_depth_value" translatable="true">Number of saved items limit: %d</string>
 </resources>

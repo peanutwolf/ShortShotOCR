@@ -19,8 +19,10 @@
     <string name="call">Aramak</string>
     <string name="share_text">Metin Paylaş</string>
     <string name="tap_msg">Metne dokunun…</string>
-    <string name="save_text">Save to history</string>
-    <string name="detection_history">Detection History</string>
-    <string name="no_history_available">No Detections available yet in database. Click save button when detections are made.</string>
-    <string name="history_depth_value">Number of saved items</string>
+    <string name="save_text">Geçmişe kaydet</string>
+    <string name="detection_history">Tanınma Tarihi</string>
+    <string name="no_history_available">Veritabanında henüz tanıma yok. Tanıma yapıldıklarında bağlam menüsünde kaydet düğmesine tıklayın veya ayarlar menüsünde kaydetme kaydını seçin.</string>
+    <string name="history_settings_header">Tanıya otomatik olarak kayıtların geçmişe kaydedilmesini isterseniz anahtarı seçin</string>
+    <string name="save_history">Tanıma amaçlı veritabanına kaydet</string>
+    <string name="history_depth_value">Kayıtlı öğe sayısı sınırı: %d</string>
 </resources>

@@ -19,8 +19,10 @@
     <string name="share_text">แบ่งปันข้อความ</string>
     <string name="copy">สำเนา</string>
     <string name="tap_msg">แตะข้อความ…</string>
-    <string name="save_text">Save to history</string>
-    <string name="detection_history">Detection History</string>
-    <string name="no_history_available">No Detections available yet in database. Click save button when detections are made.</string>
-    <string name="history_depth_value">Number of saved items</string>
+    <string name="save_text">บันทึกลงในประวัติ</string>
+    <string name="detection_history">ประวัติการรับทราบข้อมูล</string>
+    <string name="no_history_available">ไม่มีการให้คำแนะนำที่มีอยู่ในฐานข้อมูล คลิกปุ่มบันทึกในเมนูบริบทเมื่อสร้างความสำเร็จหรือเลือกบันทึกสวิทช์ในเมนูการตั้งค่า</string>
+    <string name="history_settings_header">เลือกสวิตช์ถ้าคุณต้องการบันทึกโดยอัตโนมัติเพื่อบันทึกประวัติ</string>
+    <string name="save_history">บันทึกลงในฐานข้อมูลเกี่ยวกับการจดจำ</string>
+    <string name="history_depth_value">จำนวนรายการที่บันทึกไว้ที่ จำกัด : %d</string>
 </resources>

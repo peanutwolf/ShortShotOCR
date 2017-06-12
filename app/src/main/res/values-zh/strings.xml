@@ -19,8 +19,10 @@
     <string name="call">呼叫</string>
     <string name="share_text">分享文字</string>
     <string name="tap_msg">点击文字…</string>
-    <string name="save_text">Save to history</string>
-    <string name="detection_history">Detection History</string>
-    <string name="no_history_available">No Detections available yet in database. Click save button when detections are made.</string>
-    <string name="history_depth_value">Number of saved items</string>
+    <string name="save_text">保存至历史记录</string>
+    <string name="detection_history">识别历史</string>
+    <string name="no_history_available">数据库中还没有可用的识别。在进行识别时单击上下文菜单中的保存按钮，或者在设置菜单中选择保存开关。</string>
+    <string name="history_settings_header">如果要自动将识别保存到历史记录中，请选择开关</string>
+    <string name="save_history">保存到数据库的认可</string>
+    <string name="history_depth_value">已保存料品数量限制： %d</string>
 </resources>
