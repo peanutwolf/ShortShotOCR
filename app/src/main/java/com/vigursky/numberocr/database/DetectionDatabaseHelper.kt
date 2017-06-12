@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteOpenHelper
 import android.content.Context
 import android.database.Cursor
 import com.vigursky.numberocr.R
-import java.util.concurrent.ExecutionException
+
 
 /**
  * Created by vigursky on 29.05.2017.

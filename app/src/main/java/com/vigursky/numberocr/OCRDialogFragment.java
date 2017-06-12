@@ -63,7 +63,7 @@ public class OCRDialogFragment extends DialogFragment{
             mOCRImageView.setImageBitmap(detectedBitmap);
 
         SharedPreferences mSharedPref = PreferenceManager.getDefaultSharedPreferences(getActivity().getApplicationContext());
-        boolean histSwitch_def = mSharedPref.getBoolean(TAG_HISTORY_SWITCH_VALUE, false);
+        boolean histSwitch_def = mSharedPref.getBoolean(TAG_HISTORY_SWITCH_VALUE, true);
         if(numbers != null && histSwitch_def){
             DetectionHistoryDBHelper dbHelper = new DetectionHistoryDBHelper(getActivity().getApplicationContext());
             dbHelper.writeDataModels(numbers);

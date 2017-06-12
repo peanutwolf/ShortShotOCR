@@ -25,7 +25,7 @@
     <string name="tap_msg" translatable="true">Tap the text…</string>
     <string name="save_text">Save to history</string>
     <string name="detection_history">Detection History</string>
-    <string name="no_history_available">No Detections available yet in database.\nClick save button in context menu when detections are made\nor select saving switch in settings menu.</string>
+    <string name="no_history_available">No Detections available yet in database.\nClick save button in context menu when detections are made or select saving switch in settings menu.</string>
     <string name="history_settings_header">Select switch if you want detections automatically to be saved to history</string>
     <string name="save_history">Save to DB on detection</string>
     <string name="history_depth_value">Number of saved items limit: %d</string>

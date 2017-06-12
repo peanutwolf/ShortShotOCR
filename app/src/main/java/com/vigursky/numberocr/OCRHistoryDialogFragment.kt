@@ -12,7 +12,6 @@ import android.view.View.*
 import com.vigursky.numberocr.database.DetectionHistoryDBHelper
 import com.vigursky.numberocr.database.buildDetectionModel
 import com.vigursky.numberocr.databinding.OcrHistoryListBinding
-import java.util.function.BiConsumer
 
 /**
  * Created by vigursky on 02.06.2017.

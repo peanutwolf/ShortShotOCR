@@ -146,7 +146,7 @@ class OCRDetectionHistoryAdapter(val mContext: Context, val mModels : List<Detec
             mItemBinding.chkTrashItem.isChecked = mItemChecked
 
             mItemBinding.detection = model
-            mItemBinding.detectionID.text = String.format("%d.", adapterPosition)
+            mItemBinding.detectionID.text = String.format("%d", adapterPosition+1)
         }
 
     }

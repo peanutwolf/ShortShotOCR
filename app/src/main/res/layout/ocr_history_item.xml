@@ -9,36 +9,50 @@
             type="DetectionItemModel"/>
     </data>
 
-    <LinearLayout
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        card_view:cardCornerRadius="5dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardBackgroundColor="#3d3c3c">
 
-        <TextView
-            android:id="@+id/detectionID"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/detectedFont_size"
-            android:padding="@dimen/sp6_size"
-            android:text="1." />
-
-        <TextView
-            android:id="@+id/detectionText"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:maxLines="1"
-            android:singleLine="true"
-            android:textSize="@dimen/detectedFont_size"
-            android:padding="@dimen/sp12_size"
-            android:text="@{detection.detection}"
-            android:layout_weight="1.6"/>
+            android:orientation="horizontal">
 
-        <CheckBox
-            android:id="@+id/chk_trash_item"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="0.1"
-            android:padding="@dimen/detectedFont_interval" />
+            <TextView
+                android:id="@+id/detectionID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/SettingsText_size"
+                android:padding="@dimen/sp6_size"
+                android:textColor="@color/colorAccentLight"
+                android:layout_gravity="center"
+                android:text="1." />
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/detectionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="@dimen/detectedFont_size"
+                android:padding="@dimen/sp12_size"
+                android:text="@{detection.detection}"
+                android:layout_weight="1.6"/>
+
+            <CheckBox
+                android:id="@+id/chk_trash_item"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:padding="@dimen/detectedFont_interval" />
+
+        </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
 </layout>

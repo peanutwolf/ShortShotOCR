@@ -33,6 +33,7 @@ import android.widget.TextView;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
+import com.google.firebase.crash.FirebaseCrash;
 import com.vigursky.numberocr.camera.CameraSource;
 
 import org.greenrobot.eventbus.EventBus;
@@ -75,9 +76,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback, Vi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.d(TAG, "onCreate");
         setContentView(R.layout.main_activity);
-
         mSharedPref = getSharedPreferences(SettingsActivity.class.getSimpleName(), Context.MODE_PRIVATE);
 
         int rc = ActivityCompat.checkSelfPermission(this, Manifest.permission.CAMERA);
