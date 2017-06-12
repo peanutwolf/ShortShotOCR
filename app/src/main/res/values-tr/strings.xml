@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ok">OK</string>
+    <string name="cancel">İptal etmek</string>
+    <string name="detection_is_running">Tanıma çalışıyor</string>
+    <string name="settings_header">Seçeneğini isterseniz otomatik olarak görüntülü\niletişim ile tanınan telefon numarası veya web URL</string>
+    <string name="phone_number">Telefon numarası</string>
+    <string name="web_url">Web URL\'si</string>
+    <string name="focus_box_text">Telefon numarasını hedefle</string>
+    <string name="detections">Tanınmalar</string>
+    <string name="empty_detections">Hayır takdirler henüz yapılmadı.\nBirkaç telefon numarası veya web URL için kamera hedef.</string>
+    <string name="permissions">İzinler</string>
+    <string name="no_phone_permission">Telefon izni reddedildi</string>
+    <string name="no_camera_permission">Kamera izni reddedildi</string>
+    <string name="open_url">Açık URL</string>
+    <string name="info">Bilgi</string>
+    <string name="edit">Düzenle</string>
+    <string name="copy">Kopyala</string>
+    <string name="call">Aramak</string>
+    <string name="share_text">Metin Paylaş</string>
+    <string name="tap_msg">Metne dokunun…</string>
+    <string name="save_text">Save to history</string>
+    <string name="detection_history">Detection History</string>
+    <string name="no_history_available">No Detections available yet in database. Click save button when detections are made.</string>
+    <string name="history_depth_value">Number of saved items</string>
+</resources>

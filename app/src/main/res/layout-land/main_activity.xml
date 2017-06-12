@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/test_layout"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <SurfaceView
+        android:id="@+id/camera_frame"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+    <com.vigursky.numberocr.FocusBoxView
+        android:id="@+id/focus_box"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <include layout="@layout/toolbar"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_gravity="end"/>
+
+    <com.vigursky.numberocr.OCRGraphicView
+        android:id="@+id/ocr_graphic_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id= "@+id/detect_progress_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/detection_is_running"
+        android:padding="@dimen/detectedFont_interval"
+        android:gravity="center"
+        android:textColor="@color/colorAccentLight"
+        android:textSize="@dimen/SettingsText_size"/>
+
+
+</FrameLayout>

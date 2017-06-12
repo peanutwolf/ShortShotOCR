@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name" translatable="false">ShortShotOCR</string>
+    <string name="no_camera_permission" translatable="true">Camera permission is denied</string>
+    <string name="ok" translatable="true">OK</string>
+    <string name="cancel" translatable="true">Cancel</string>
+    <string name="clipboard_label" translatable="false">clipboard_label</string>
+    <string name="detection_is_running" translatable="true">Recognition is running…</string>
+    <string name="ocr_item" translatable="false">OCR_item</string>
+    <string name="settings_header" translatable="true">Select switch if you want automatically display dialog with recognized phone number or web URL</string>
+    <string name="phone_number" translatable="true">Phone Number</string>
+    <string name="web_url" translatable="true">Web URL</string>
+    <string name="focus_box_text" translatable="true">Target on phone number</string>
+    <string name="detections" translatable="true">Recognitions</string>
+    <string name="empty_detections" translatable="true">No recognitions have been made yet. Target your camera for some phone number or web URL.</string>
+    <string name="permissions" translatable="true">Permissions</string>
+    <string name="no_phone_permission" translatable="true">Phone permission is denied</string>
+    <string name="call" translatable="true">Call</string>
+    <string name="open_url" translatable="true">Open URL</string>
+    <string name="copy" translatable="true">Copy</string>
+    <string name="edit" translatable="true">Edit</string>
+    <string name="info" translatable="true">Info</string>
+    <string name="developer_info" translatable="false">Developer: Evgeniy Vigurskiy\n\nFeedback: peanutwolf@bk.ru</string>
+    <string name="icons8_link" translatable="false">This app uses https://icons8.com</string>
+    <string name="share_text" translatable="true">Share Text</string>
+    <string name="tap_msg" translatable="true">Tap the text…</string>
+    <string name="save_text">Save to history</string>
+    <string name="detection_history">Detection History</string>
+    <string name="no_history_available">No Detections available yet in database.\nClick save button in context menu when detections are made\nor select saving switch in settings menu.</string>
+    <string name="history_settings_header">Select switch if you want detections automatically to be saved to history</string>
+    <string name="save_history">Save to DB on detection</string>
+    <string name="history_depth_value">Number of saved items limit: %d</string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="SettingsText_size">18sp</dimen>
+    <dimen name="detectedFont_size">25sp</dimen>
+    <dimen name="detectedFont_interval">8sp</dimen>
+    <dimen name="sp12_size">12sp</dimen>
+    <dimen name="sp6_size">6sp</dimen>
+</resources>

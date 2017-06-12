@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container_ocr_item_value"
+    android:orientation="horizontal"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.vigursky.numberocr.PhoneEditText
+        android:id="@+id/edtxt_ocr_item_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textSize="@dimen/detectedFont_size"
+        android:enabled="true"
+        android:clickable="false"
+        android:longClickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:cursorVisible="false"
+        style="?android:attr/textViewStyle"
+        android:padding="@dimen/sp12_size"
+        android:text="@string/ocr_item"/>
+
+
+</LinearLayout>

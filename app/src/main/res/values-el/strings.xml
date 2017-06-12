@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="no_camera_permission">άδεια κάμερα δεν γίνεται δεκτό</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Ματαίωση</string>
+    <string name="detection_is_running">αναγνώριση τρέχει…</string>
+    <string name="settings_header">Επιλέξτε διακόπτη αν θέλετε το πλαίσιο διαλόγου εμφανίζεται\nαυτόματα με το αναγνωρισμένο αριθμό τηλεφώνου ή web URL</string>
+    <string name="phone_number">Τηλεφωνικό νούμερο</string>
+    <string name="web_url">Web URL</string>
+    <string name="focus_box_text">Στόχος για τον αριθμό τηλεφώνου</string>
+    <string name="detections">αναγνωρίσεις</string>
+    <string name="empty_detections">Δεν αναγνωρίσεις έχουν γίνει ακόμα.\nΣτοχεύστε τη φωτογραφική σας μηχανή για κάποιο αριθμό τηλεφώνου ή web URL.</string>
+    <string name="permissions">δικαιώματα</string>
+    <string name="no_phone_permission">άδεια τηλέφωνο δεν γίνεται δεκτό</string>
+    <string name="call">Κλήση</string>
+    <string name="open_url">Άνοιγμα URL</string>
+    <string name="copy">αντιγραφή</string>
+    <string name="edit">Επεξεργασία</string>
+    <string name="info">Πληροφορίες</string>
+    <string name="share_text">Μοιραστείτε Κείμενο</string>
+    <string name="tap_msg">Πατήστε στο κείμενο</string>
+    <string name="save_text">Save to history</string>
+    <string name="detection_history">Detection History</string>
+    <string name="no_history_available">No Detections available yet in database. Click save button when detections are made.</string>
+    <string name="history_depth_value">Number of saved items</string>
+</resources>
