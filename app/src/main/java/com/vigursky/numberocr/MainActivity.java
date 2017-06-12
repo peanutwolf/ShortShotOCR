@@ -316,6 +316,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback, Vi
             mTessService.reset();
         mOCRDetectedLines = null;
         mOCRGraphicView.drawGraphics(null);
+        focusBox.resetBox();
     }
 
     private void onSettingsButtonClicked(){

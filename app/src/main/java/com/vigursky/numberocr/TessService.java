@@ -189,8 +189,8 @@ public class TessService extends Service {
         thread.start();
 
         mServiceLooper = thread.getLooper();
-//        mServiceHandler = new GoogleVisionHandler(mServiceLooper);
-        mServiceHandler = new SimulateVisionHandler(mServiceLooper);
+        mServiceHandler = new GoogleVisionHandler(mServiceLooper);
+//        mServiceHandler = new SimulateVisionHandler(mServiceLooper);
     }
 
     public void reset(){

@@ -185,7 +185,13 @@ public class FocusBoxView extends View {
     }
 
     public Rect getBox() {
-        return box;
+        return getBoxRect();
+    }
+
+    public void resetBox(){
+        this.box = null;
+        getBoxRect();
+        invalidate();
     }
 
     private void moveBoxRect(int dW, int dH) {
@@ -318,11 +324,11 @@ public class FocusBoxView extends View {
                             FocusBoxView.this.invalidate();
                             lastX = currentX;
                             lastY = currentY;
-                            return true;
-                        case MotionEvent.ACTION_UP:
                             for(FocusBoxTouchListener l : mFocusBoxMoveListeners){
                                 l.FocusMoved(getBox(), event);
                             }
+                            return true;
+                        case MotionEvent.ACTION_UP:
                             lastX = -1;
                             lastY = -1;
                             return true;
