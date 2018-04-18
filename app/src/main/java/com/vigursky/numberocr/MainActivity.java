@@ -263,6 +263,8 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback, Vi
         EventBus.getDefault().register(this);
     }
 
+
+
     @Override
     protected void onPause() {
         super.onPause();
@@ -311,11 +313,15 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback, Vi
         mOCRDialogFragment.show(getFragmentManager(), "OCR_action");
     }
 
-    private void onRestartButtonClicked(){
+    private void resetDetectedLines(){
         if(mTessService != null)
             mTessService.reset();
         mOCRDetectedLines = null;
         mOCRGraphicView.drawGraphics(null);
+    }
+
+    private void onRestartButtonClicked(){
+        resetDetectedLines();
         focusBox.resetBox();
     }
 
@@ -411,7 +417,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback, Vi
                         .setRequestedPreviewSize(1280, 1024)
                         .setRequestedFps(30.0f)
                         .setFlashMode(useFlash ? Camera.Parameters.FLASH_MODE_TORCH : null)
-                        .setFocusMode(autoFocus ? Camera.Parameters.FOCUS_MODE_AUTO : null)
+                        .setFocusMode(autoFocus ? Camera.Parameters.FOCUS_MODE_CONTINUOUS_PICTURE : null)
                         .setFocusBox((FocusBoxView) findViewById(R.id.focus_box))
                         .build();
     }
@@ -419,7 +425,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback, Vi
     @Override
     public void OnDialogDismiss() {
         pause_detection(false);
-        this.onRestartButtonClicked();
+        resetDetectedLines();
     }
 
     private void pause_detection(boolean pause){

@@ -169,8 +169,8 @@ public class TessService extends Service {
         }
     }
 
-    public class TessBinder extends Binder {
-        public TessService getService(){
+    class TessBinder extends Binder {
+        TessService getService(){
             return TessService.this;
         }
 

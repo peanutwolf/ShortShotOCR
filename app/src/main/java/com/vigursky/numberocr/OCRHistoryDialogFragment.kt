@@ -80,6 +80,7 @@ class OCRHistoryDialogFragment : DialogFragment(){
             val callback = activity as OCRDialogFragment.ICallback
             callback.OnDialogDismiss()
         }
+        mDetectionDbHelper?.close()
     }
 
 }

@@ -44,8 +44,8 @@
         android:layout_gravity="left"
         android:layout_margin="@dimen/sp12_size"
         android:padding="6sp"
-        android:scaleX="0.5"
-        android:scaleY="0.5"
+        android:scaleX="0.6"
+        android:scaleY="0.6"
         android:background="@drawable/restart_btn_selector"
         android:src="@mipmap/ic_restart"/>
 

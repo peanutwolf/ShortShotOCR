@@ -845,10 +845,6 @@ public class CameraSource {
             }
         }
 
-        if(mFocusBox != null){
-            mFocusBox.addOnFocusBoxMoveListener(mFocusBoxListener);
-        }
-
         mFlashMode = parameters.getFlashMode();
 
         camera.setParameters(parameters);
@@ -1143,6 +1139,9 @@ public class CameraSource {
     public void pauseCameraFraming(boolean pause) {
 
         synchronized (this){
+            if(mCamera == null)
+                return;
+
             if(pause){
                 mCamera.setPreviewCallback(null);
             }else{

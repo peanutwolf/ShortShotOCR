@@ -44,6 +44,7 @@ public class OCRDialogFragment extends DialogFragment{
     private OCRDetectionListAdapter mDetectionListAdapter;
     private AlertDialog mDialog;
     private View mView;
+    private DetectionHistoryDBHelper dbHelper;
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
@@ -65,7 +66,7 @@ public class OCRDialogFragment extends DialogFragment{
         SharedPreferences mSharedPref = PreferenceManager.getDefaultSharedPreferences(getActivity().getApplicationContext());
         boolean histSwitch_def = mSharedPref.getBoolean(TAG_HISTORY_SWITCH_VALUE, true);
         if(numbers != null && histSwitch_def){
-            DetectionHistoryDBHelper dbHelper = new DetectionHistoryDBHelper(getActivity().getApplicationContext());
+            dbHelper = new DetectionHistoryDBHelper(getActivity().getApplicationContext());
             dbHelper.writeDataModels(numbers);
         }
         mDetectionListAdapter = new OCRDetectionListAdapter(getActivity().getApplicationContext(), numbers);
@@ -95,6 +96,8 @@ public class OCRDialogFragment extends DialogFragment{
             ICallback callback = (ICallback) getActivity();
             callback.OnDialogDismiss();
         }
+        if(dbHelper != null)
+            dbHelper.close();
         super.onDismiss(dialog);
     }
 
